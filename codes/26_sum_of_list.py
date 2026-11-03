@@ -1,0 +1,13 @@
+"""Program 26: Find the sum of elements in a list."""
+
+def sum_of_list(numbers):
+    total = 0
+
+    for num in numbers:
+        total += num
+
+    return total
+
+if __name__ == "__main__":
+    numbers = list(map(int, input("Enter numbers separated by spaces: ").split()))
+    print("Sum:", sum_of_list(numbers))
